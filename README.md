@@ -9,3 +9,6 @@
   
 * vim
   * [Cheat-Sheet](Library/Linux/vim_cheat_sheet.png) Quelle https://i.redd.it/ve1jv3m3qqj21.png 
+
+* putty
+  * Putty als "Socks Proxy" https://www.math.ucla.edu/computing/kb/creating-ssh-proxy-tunnel-putty
