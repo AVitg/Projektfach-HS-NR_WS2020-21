@@ -1,0 +1,143 @@
+
+
+Welche Betriebssysteme könnten im Unternehmen zum Einsatz kommen?
+-Windows 
+-Linux, 
+	- verschiedene Distributionen 
+	- Android
+
+BSD	
+	-Macos Ios 
+	
+
+Welche "Netzwerkgeräte" könnten zum Einsatz kommen?
+- NAS network attached storage?
+- SAN Storage are natwork, FC angebunden 6GB und mehr  zugriff auf LUNS (aka Festplatten, RAID)  1 0 10/01 5 6
+- Drucker 
+- switches und router
+- Webserver
+- Dateiserver
+- Desktop/Laptop PC
+- IoT
+- Zugriffskontroll systeme
+- Telefon SIP/ IP Telefonie
+- Firewalls
+	Cisco router FW modul ACL
+	Checkpoint Firewalls.
+	SIP ANY ,Destinati IP 194.94.120.1 123/NTP 80BLOCKED..
+
+- Proxy 
+	SQUID
+
+Intrusion Detection SYSTEM IDS	
+Intrusion Preventions SYSTEM 
+IPS 
+	SNORT Sourcefire, CISCO
+	BRO
+
+WAF	(Web application Firewall)
+	IDS für webserver
+
+
+
+Welche "Dinge" haben womöglich in Ihrem Unternehmen eine IP-Adresse?
+- Drucker
+- IoT / Kafeemaschine / 
+- SPS
+- CNC Fräsmaschien
+- 3Drucker
+
+
+Welche Probleme ergeben sich daraus?
+Angreiffbar 
+Können zum Angreifer werden ( vgl https://github.com/jgamblin/Mirai-Source-Code)
+
+
+Welche Dienste (vom Internet / Intranet erreichbaren Dienste) könnten in Ihrer Firma vorhanden sein, und welche Bedrohungs-Szenarien/Probleme sehen Sie?
+
+Router Switche
+Proxy
+
+IDS
+
+Normale Rechner
+Windows
+
+Active-Directory (LDAP... mit Propriäteren "verbesserungen")
+---> Golden Ticket attacke +silver ticket
+
+
+VPN
+FirmenAuftritt: Webserver (extern gehostet)
+
+Webserver (intern)
+WIKI, Git, Sharepoint
+
+E-Mailserver (intern) TLS verschlüsselt 
+MS Exchange 
+Linux 
+	sendmail
+	postfix
+	exim
+	dovecot
+		
+Fileserver
+
+Datenbanken 
+MS SQL?
+MYSQL
+mariadb
+postgresql
+Mongo-DB (NOsql ???)
+Oracle
+
+
+
+"Softwareschmiede"  - $$$
+ML, AI, Blockchain, Crypto Currency
+
+Cuda Core/Render Farmen Mieten etc...
+
+
+Mitarbeiter
+Kunden 
+
+
+
+
+
+https://de.wikipedia.org/wiki/Morris_(Computerwurm)
+	
+	https://koeln.ccc.de/archiv/drt/books/stoll-kuckucksei-text.tex
+	
+	Wenn man Post von einem Unix-Computer zu einem anderen
+schickt, bewerkstelligt das Unix-sendmail-Programm die Übertragung. Eine elektronische Meldung kommt aus dem Netzwerk
+an, und sendmail gibt sie an den Adressaten weiter. Es ist ein
+elektronisches Postamt, das Post verteilt.
+Sendmail hat ein Loch. Normalerweise schickt ein fremder Computer Botschaften in dieses Programm, und alle sind glücklich
+und zufrieden. Aber wenn's ein Problem gibt, kann man das Programm bitten, in den Fehlersuchmodus zu gehen - die Hintertür
+des Programms.
+
+Wenn man im Fehlersuchmodus ist, kann man mit sendmail normale Unix-Befehle von einem fremden Computer aus eingeben.
+Befehle wie >Führe das folgende Programm aus<.
+
+So also brütete der Virus Kopien aus. Er schickte anderen Computern per elektronischer Post Kopien von sich selbst und befahl
+ihnen dann, das Virusprogramm auszuführen.
+Nachdem das Virusprogramm angelaufen war, suchte es nach anderen Computern, die es infizieren konnte, und schickte ihnen
+Botschaften.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
