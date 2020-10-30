@@ -1,0 +1,7 @@
+#rename to .vimrc and place in your homefolder
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+colorscheme torte
+set hlsearch
