@@ -7,11 +7,6 @@
   https://redmine.secef.net/projects/secef/wiki/CompareFormat
 
 
-* CEF vs LEEF Format Vergleich eines identischen Events
-
-  https://help.deepsecurity.trendmicro.com/Events-Alerts/syslog-parsing.html
-
-
 * Elastic Common Schema
 
   https://www.elastic.co/blog/introducing-the-elastic-common-schema
