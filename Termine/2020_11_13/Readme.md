@@ -1,4 +1,4 @@
-#Szenario - AMB-Ware - 3
+# Szenario - AMB-Ware - 3
 
 Beim letzten Termin haben wir Regex und Logstash "kennengelernt".
 Hier finden Sie Beispiel Konfigurationen für eine sogenannte Pipeline.
@@ -16,17 +16,17 @@ Verwendien Sie die **zweite** Beispieldatei und starten Sie logstash:
 ./logstash-7.9.3/bin/logstash -f  logstash-7.9.3/config/<your.config.here>.conf --config.reload.automaticMarkdownLivePreview
 ```
 
-##Aufgabe:
+## Aufgabe:
 
 Bearbeiten Sie in einem zweiten Fenster (z.B. [tmux](link) str+b c, oder strg+b ", oder strg+b %) die logstash Pipeline derart, dass die Felder Source & Destination Port, LEN und Protocol aus dem Beispiel in eigene Felder geparst werden.
 
-* ```
+```
 echo "Jan  8 03:37:09 example-host kernel: iptables DROP_INPUT: IN=eth0 OUT= MAC=90:10:35:5a:1e:3a:90:10:9e:ec:2c:71:08:00 SRC=203.0.113.36 DST=172.16.54.114 LEN=52 TOS=0x00 PREC=0x00 TTL=115 ID=15743 DF PROTO=TCP SPT=17805 DPT=445 WINDOW=8192 RES=0x00 SYN URGP=0" > /dev/udp/localhost/22514
 ```
 
-oder :
+oder:
 
-* ```
+```
 echo "Jan  8 03:37:09 example-host kernel: iptables DROP_INPUT: IN=eth0 OUT= MAC=90:10:35:5a:1e:3a:90:10:9e:ec:2c:71:08:00 SRC=203.0.113.36 DST=172.16.54.114 LEN=52 TOS=0x00 PREC=0x00 TTL=115 ID=15743 DF PROTO=TCP SPT=17805 DPT=445 WINDOW=8192 RES=0x00 SYN URGP=0" > /dev/tcp/localhost/22514
 ```
 
@@ -50,6 +50,6 @@ Wie würden Sie diese Felder benennen?
 Das haben sich schon viele gedacht und immer neue Standards erfunden
 Exkurs Log Formate
 
-##Aufgabe:
+## Aufgabe:
 Parsen sie mit Hilfe der Offiziellen Referenz der ECS Version 1.6 die Felder Source, Destination, Protocol, Event Name/Device Action der Beispiel-Logs
 Zeitfenster 45 Minuten?
