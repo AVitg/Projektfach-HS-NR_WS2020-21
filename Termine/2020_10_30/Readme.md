@@ -24,4 +24,4 @@ Welche könnten dies sein?
 * Welche Dienste (vom Internet / Intranet erreichbaren Dienste) könnten in Ihrer Firma vorhanden sein, und welche Bedrohungs-Szenarien/Probleme sehen Sie?
 
 Lassen Sie uns doch mal eine Art Topologie /Graphik erstellen!
-* link zur NW Topologie (#todo)
+* [link zur NW Topologie ](https://github.com/AVitg/Projektfach-HS-NR_WS2020-21/blob/master/AMB_Ware_NW_DIa.png)
