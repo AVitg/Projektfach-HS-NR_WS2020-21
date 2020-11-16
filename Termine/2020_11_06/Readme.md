@@ -8,7 +8,7 @@ Netzwerkgeräte wie Firewall, Router, IDS/IPS, WAF, Authentication Authorization
 **All Diese Geräte können Ereignis-Logs erzeugen.**
 
 Beispielhaft wollen wir uns einige Logs kurz anschauen:
-Github --> Link zu GitHub 
+[Github](https://github.com/AVitg/Projektfach-HS-NR_WS2020-21/tree/master/2020_11_06/log_samples)
 
 Wir haben gesehen, dass all diese Logs Gemeinsamkeiten, aber auch Unterschiede haben. 
 Sowohl innerhalb eines Log Typs, als natürlich auch zwischen den unterschiedlichen "Herstellern" und "Device" Typen.
@@ -24,7 +24,7 @@ Sample Hier
 
 Gruppenarbeit bitte ;) 
 
- XLS File von iptables 
+[XLS File von iptables](https://github.com/AVitg/Projektfach-HS-NR_WS2020-21/blob/master/2020_11_06/iptables.xlsx)
 
 # Szenario - AMB-Ware - 2.1
 Eine automatische "Normalisierung" ist natürlich mit Excel und Co nicht möglich.
@@ -35,7 +35,7 @@ Wie?
 ## Am besten mit regulären Ausdrücken/ regex 
 
 Links zu regex:
-
+* https://regex101.com/
 * https://github.com/aloisdg/awesome-regex
 * https://github.com/kkos/oniguruma/blob/master/doc/RE
 * Unter Summary nochmal ein paar Beispiele https://coralogix.com/log-analytics-blog/regex-101/

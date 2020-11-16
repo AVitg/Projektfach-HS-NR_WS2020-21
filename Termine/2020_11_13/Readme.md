@@ -8,8 +8,8 @@ Hier finden Sie Beispiel Konfigurationen für eine sogenannte Pipeline.
 * https://www.elastic.co/guide/en/logstash/7.9/plugins-filters-grok.html#_custom_patterns
 * https://github.com/logstash-plugins/logstash-patterns-core/blob/master/patterns/grok-patterns
 
-* logstash_beispiel_1.conf
-* logstash_beispiel_2.conf
+* [logstash_beispiel_1.conf](sample1.conf)
+* [logstash_beispiel_2.conf](sample2.conf)
 
 Verwendien Sie die **zweite** Beispieldatei und starten Sie logstash:
 ```
@@ -48,8 +48,8 @@ Wie würden Sie diese Felder benennen?
 ... wäre es nicht toll, wenn es einheitliche Log Formate gäbe?
 
 Das haben sich schon viele gedacht und immer neue Standards erfunden
-Exkurs Log Formate
+[Exkurs Log Formate](https://github.com/AVitg/Projektfach-HS-NR_WS2020-21/tree/master/Library/standardized_log_formats)
 
 ## Aufgabe:
-Parsen sie mit Hilfe der Offiziellen Referenz der ECS Version 1.6 die Felder Source, Destination, Protocol, Event Name/Device Action der Beispiel-Logs
+Parsen sie mit Hilfe der [Offiziellen Referenz der ECS Version 1.6](https://www.elastic.co/guide/en/ecs/current/index.html) die Felder Source, Destination, Protocol, Event Name/Device Action der [Beispiel-Logs](https://github.com/AVitg/Projektfach-HS-NR_WS2020-21/blob/master/2020_11_06/log_samples/iptables/iptables.log)
 Zeitfenster 45 Minuten?
