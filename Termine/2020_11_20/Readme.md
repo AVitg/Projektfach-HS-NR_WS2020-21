@@ -14,7 +14,7 @@ Installieren Sie einen kompletten Elastic-Stack:
 Aufgabe 2
 "konfigurieren" Sie logstash derart, dass 
 * es auf udp oder tcp Port 22514 lauscht
-* es die Sample logs (iptables)[/Termine/2020_11_06/log_samples] (grösstenteils) parst
+* es die Sample logs (iptables)[/Termine/2020_11_06/log_samples] parst (mindesten IP und PORT, die andren Felder sind Kür)
 * Wählen Sie die Feld Namen nach (Elastic Common Schema 1.7)[https://www.elastic.co/guide/en/ecs/current/index.html]
 
 ## hints
