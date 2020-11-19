@@ -36,4 +36,4 @@ Aufgabe 2
   
   
  Teaser...
-*(nicht ECS konform!)[ziel.png]
+* (nicht ECS konform!)[ziel.png]
