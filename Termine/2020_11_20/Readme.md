@@ -3,7 +3,7 @@
 Heute machen wir ~~blau~~ bunt!
 
 Aufgabe 1
-Installieren einen kompletten ELK Stack:
+Installieren Sie einen kompletten Elastic-Stack:
 * fügen Sie das Elastic Repository hinzu, cent-os
 * nutzen Sie yum zum installieren von Logstash, ElasticSearch und Kibana
 * modifizieren Sie die Pipeline-Konfiguration unter /etc/logstash/config/pipelines.yml, so dass diese genau "auf eine Datei zeigt"
