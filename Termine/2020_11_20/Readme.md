@@ -6,7 +6,7 @@ Aufgabe 1
 Installieren Sie einen kompletten Elastic-Stack:
 * fügen Sie das Elastic Repository hinzu, cent-os
 * nutzen Sie yum zum installieren von Logstash, ElasticSearch und Kibana
-* modifizieren Sie die Pipeline-Konfiguration unter /etc/logstash/config/pipelines.yml, so dass diese genau "auf eine Datei zeigt"
+* modifizieren Sie die Pipeline-Konfiguration unter /etc/logstash/pipelines.yml, so dass diese genau "auf eine Datei zeigt"
 * konfigurieren Sie, falls nötig Elasticsearch, Kibana und Logstash (Aufgabe2) (siehe auch hints)
 * Richten Sie diese 3 als Dienste ein und starten Sie diese
 * tunneln Sie Port 5601 via ssh zu Ihrem Server, um Kibana zu erreichen
