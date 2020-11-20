@@ -21,7 +21,7 @@ Aufgabe 2
 * kibana.yml
   * server.host: "0.0.0.0"
 * iptables -L -n
-  * permanent hinzufügen bitte, ggl
+  * permanent hinzufügen bitte, ggf ( firewall-cmd --zone=public --add-port=22514/tcp --permanent ) 
   * systemctl restart firewalld
 * logstash
   * Pipeline Konfiguration unter /etc/logstash/conf.d/
