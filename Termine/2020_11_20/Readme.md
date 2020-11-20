@@ -20,7 +20,7 @@ Aufgabe 2
 ## hints
 * kibana.yml
   * server.host: "0.0.0.0"
-* iptables -L
+* iptables -L -n
   * permanent hinzufügen bitte, ggl
   * systemctl restart firewalld
 * logstash
