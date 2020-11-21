@@ -24,7 +24,7 @@ Aufgabe 2
   * permanent hinzufügen bitte, ggf ( firewall-cmd --zone=public --add-port=22514/tcp --permanent ) 
   * systemctl restart firewalld
 * logstash
-  * Pipeline Konfiguration unter /etc/logstash/conf.d/
+  * Pipeline Konfiguration unter /etc/logstash/conf.d/(z.b. iptables.conf)
   * output elasticsearch
 	* index => "iptables-%{+YYYY.MM.dd}" (Details später) 
   * Notation nicht source.address, sondern [source][address] 
