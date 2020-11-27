@@ -18,7 +18,7 @@
 # 2 Elastic Beats
 
 * was sind Elastic Beats
-* Installation & Konfiguration eines filebeats für iptables über UDP
+* Installation & Konfiguration eines filebeats für iptables über UDP/TCP
 * Demo - Bitte
 
 
