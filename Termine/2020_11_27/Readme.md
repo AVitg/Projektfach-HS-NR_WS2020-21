@@ -29,3 +29,4 @@
 * recherche zu 
   * https://web.archive.org/web/20120511114229/http://eindbazen.net/2012/05/php-cgi-advisory-cve-2012-1823/
   * file upload
+  * (web shell)
