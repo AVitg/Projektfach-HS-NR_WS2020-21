@@ -20,6 +20,7 @@
 * was sind Elastic Beats
 * Installation & Konfiguration eines filebeats für iptables über UDP/TCP
 * Demo - Bitte
+* Unterschied Logstash und Beats
 
 
 # 3 metasploitable2
