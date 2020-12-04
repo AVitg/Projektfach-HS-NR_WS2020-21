@@ -1,0 +1,85 @@
+#     Index/Type/ID
+POST /talk/text/1
+{
+  "title": "He went",
+  "random__text": "He went such dare good fact. The small own seven saved man age."
+}
+
+POST /talk/text/2
+{
+  "title": "He oppose",
+  "random__text":                 
+    "He oppose at thrown desire of no. Announcing impression unaffected day his are unreserved indulgence."
+}
+
+POST /talk/text/3
+{
+  "title": "Repulsive questions",
+  "random__text": "Repulsive questions contented him few extensive supported."
+}
+
+#ID Nicht notwendig
+POST /talk/text/
+{
+  "title": "Old education",
+  "random__text": "Old education him departure any arranging one prevailed."
+}
+
+#Zeigt alle einträge an
+GET _search
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
+#Zeigt alle einträge in talk an
+GET talk/_search
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
+
+GET _search
+{
+  "query": {
+    "match": {
+      "random__text": " small"
+    }
+  }
+}
+
+# "fuzziness":"1"  Ein Buchstabe darf zu viel/wenig/anders sein
+
+GET _search
+{
+  "query": {
+    "match": {
+      "random__text":
+      {
+        "query": "smal", 
+        "fuzziness":"1" 
+        
+      }
+    }
+  }
+}
+
+#Gibt das Dokoment aus talk mit der id 1 aus
+GET /talk/text/1
+
+GET _analyze
+{
+  "char_filter": [
+    "html_strip"
+    ],
+    "tokenizer": "standard",
+    "filter": [
+      "lowercase",
+      "stop",
+      "snowball"
+      ],
+      "text": "Old education him departure any arranging one prevailed."
+}
