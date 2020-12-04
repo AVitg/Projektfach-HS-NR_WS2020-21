@@ -1,1 +1,1 @@
-https://www.elastic.co/guide/en/beats/filebeat/current/configuration-filebeat-modules.html
+https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-installation-configuration.html
