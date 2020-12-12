@@ -3,3 +3,6 @@
 ```
 url.original:*/?-*   vs    url.original:"*/?-*"
 ```
+```
+url.original:*whoami*
+```
