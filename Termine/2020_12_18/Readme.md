@@ -2,7 +2,7 @@ Um Indexe zu backupen /exportieren:
 
 
 in /etc/elasticsearch/elasticsearch.yml
-path.repo: /var/elastic/  //ordner muss existieren und nicht in /tmp liegen
+path.repo: /var/elastic/  //ordner muss existieren und nicht in und schreibbar sein /tmp liegen
 
 
 im dev tool:
@@ -140,7 +140,7 @@ PUT _watcher/watch/php_issue
   "actions" :{
 	"log" : {
 		"logging" : {
-			"text" :" Warning ?-s found NEW"
+			"text" :" Warning ?-s found NEW {{ctx.payload.hits.total}}"
 		}
 	}
  }
@@ -155,3 +155,61 @@ GET _watcher/watch/php_issue
 
 filebeat -c /etc/filebeat/filebeat.yml  -e
 
+
+
+
+```
+PUT _watcher/watch/php_issue2
+{
+  "trigger": {
+    "schedule": {
+      "interval": "10s"
+    }
+  },
+  "input": {
+    "search": {
+      "request": {
+        "indices": ["filebeat*"],
+        "body": {
+          "size": 0,
+          "query": {
+            "bool": {
+              "filter": [
+                {
+                  "range": {
+                    "event.ingested": {
+                      "gte": "now-200s"
+                    }
+                  }
+                },
+                {
+                  "match": {
+                    "url.original": "/?-s"
+                    
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "condition": {
+    "compare": {
+      "ctx.payload.hits.total": {
+        "gt": 0
+      }
+    }
+  },
+  "actions" :{
+	"log" : {
+		"logging" : {
+			"text" :" Warning ?-s found NEW {{ctx.payload.hits.total}}"
+		}
+	}
+ }
+}
+
+
+```
