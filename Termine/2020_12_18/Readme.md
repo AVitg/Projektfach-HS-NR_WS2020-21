@@ -213,3 +213,64 @@ PUT _watcher/watch/php_issue2
 
 
 ```
+
+```
+https://www.elastic.co/guide/en/x-pack/6.2/watcher-getting-started.html
+
+
+PUT _watcher/watch/php_issue3
+{
+  "trigger": {
+    "schedule": {
+      "interval": "10s"
+    }
+  },
+  "input": {
+    "search": {
+      "request": {
+        "indices": ["filebeat*"],
+        "body": {
+          "size": 100,
+          "query": {
+            "bool": {
+              "filter": [
+                {
+                  "range": {
+                    "event.ingested": {
+                      "gte": "now-200s"
+                    }
+                  }
+                },
+                {
+                  "match": {
+                    "url.original": "/?-s"
+                    
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "condition": {
+    "compare": {
+      "ctx.payload.hits.total": {
+        "gt": 0
+      }
+    }
+  },
+  "actions" :{
+		"index_payload" : { 
+		    "transform" : { 
+      	"script" : "return [ 'source.ip': ctx.payload.hits.hits.0._source.source.ip ]"
+      },
+    "index" : {
+      "index" : "my-index"
+      
+    }
+	}
+ }
+}
+```
