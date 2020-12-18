@@ -92,3 +92,57 @@ GET /_snapshot/_all
   }
 }
 ```
+
+```
+PUT _watcher/watch/php_issue
+{
+  "trigger": {
+    "schedule": {
+      "interval": "10s"
+    }
+  },
+  "input": {
+    "search": {
+      "request": {
+        "indices": ["filebeat*"],
+        "body": {
+          "size": 0,
+          "query": {
+            "bool": {
+              "filter": [
+                {
+                  "range": {
+                    "@timestamp": {
+                      "gte": "now-10s"
+                    }
+                  }
+                },
+                {
+                  "match": {
+                    "url.original": "/?-s"
+                    
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "condition": {
+    "compare": {
+      "ctx.payload.hits.total": {
+        "gt": 0
+      }
+    }
+  },
+  "actions" :{
+	"log" : {
+		"logging" : {
+			"text" :" Warning ?-s found NEW"
+		}
+	}
+ }
+}
+```
