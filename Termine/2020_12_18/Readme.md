@@ -145,4 +145,13 @@ PUT _watcher/watch/php_issue
 	}
  }
 }
+
+
+GET _watcher/watch/php_issue
+
 ```
+
+
+
+filebeat -c /etc/filebeat/filebeat.yml  -e
+
