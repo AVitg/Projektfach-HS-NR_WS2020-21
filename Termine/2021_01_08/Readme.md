@@ -26,21 +26,33 @@
          *  sudo systemctl enable kibana
 
 ## 0.2 Metasploitable: läuft noch?
-  * auditbeat
-    *  systemctl status auditbeat
-    ![image](images/systemctl_auditbeat.PNG)
-    *  sudo journalctl -u auditbeat
-    *  if-not: 
-         *  sudo systemctl start auditbeat
-         *  sudo systemctl enable auditbeat
+  *
+  * filebeat
+    *  filebeat -c /etc/filebeat/filebeat.yml -e
+  * Packetbeat
+   * /etc/init.d/packetbeat status
+	 /etc/init.d/packetbeat: line 139: status_of_proc: command not found
+	 /etc/init.d/packetbeat stop
+     /etc/init.d/packetbeat start
 
-# 1 Packetbeat
-  * install
-    * sudo yum install --enablerepo=elasticsearch packetbeat
-    * sudo systemctl enable packetbeat
-    * sudo systemctl start packetbeat
-    * (evtl schon installiert: sudo yum imstall libpcap)
-  * config
-    * sudo vim /etc/packetbeat/packetbeat.yml
-      *  check if "packetbeat.interfaces.device: any"
+#1 Enable "security" in ES
+* https://www.elastic.co/guide/en/elasticsearch/reference/current/security-getting-started.html folgen bi create user, keine weiteren User anlegen.
+* https://www.elastic.co/guide/en/elasticsearch/reference/current/configuring-security.html
 
+pm_system, beats_system, elastic, kibana_system, logstash_system, remote_monitoring_user.
+
+
+ ## Alles(?) wieder gangbar machen
+ 
+### kinbana 
+ ```
+./bin/kibana-keystore create --allow-root
+./bin/kibana-keystore add elasticsearch.username --allow-root
+./bin/kibana-keystore add elasticsearch.password --allow-root
+```
+
+### filebeat auf MS
+
+* bitte ersteinmal beats_system user nehmen, dann einen anderen, der mehr Privilegien hat, dann eine neue Rolle und einen entsprechenden User anlegen (s.U.)
+* https://www.elastic.co/guide/en/elasticsearch/reference/current/get-started-users.html 
+* https://www.elastic.co/guide/en/elasticsearch/reference/current/get-started-roles.html adaptieren Sie den metricbeat user und die Rolle auf unsere umgebung (beats_writer z.b.)
