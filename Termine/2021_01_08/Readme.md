@@ -61,4 +61,8 @@ pm_system, beats_system, elastic, kibana_system, logstash_system, remote_monitor
 *https://www.elastic.co/guide/en/beats/filebeat/current/privileges-to-publish-events.html
 ** https://github.com/elastic/beats/issues/10241
 
+in MS /etc/filebeat/filebeat.yml
+setup.ilm.check_exists: false
+
+
 
