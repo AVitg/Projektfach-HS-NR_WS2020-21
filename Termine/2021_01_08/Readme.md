@@ -57,4 +57,8 @@ pm_system, beats_system, elastic, kibana_system, logstash_system, remote_monitor
 * https://www.elastic.co/guide/en/elasticsearch/reference/current/get-started-users.html 
 * https://www.elastic.co/guide/en/elasticsearch/reference/current/get-started-roles.html adaptieren Sie den metricbeat user und die Rolle auf unsere umgebung (beats_writer z.b.)
 
-test123 4 
+#### und so gehts dann bitte richtig ;)
+*https://www.elastic.co/guide/en/beats/filebeat/current/privileges-to-publish-events.html
+
+
+
