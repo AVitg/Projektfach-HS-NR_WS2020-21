@@ -56,3 +56,5 @@ pm_system, beats_system, elastic, kibana_system, logstash_system, remote_monitor
 * bitte ersteinmal beats_system user nehmen, dann einen anderen, der mehr Privilegien hat, dann eine neue Rolle und einen entsprechenden User anlegen (s.U.)
 * https://www.elastic.co/guide/en/elasticsearch/reference/current/get-started-users.html 
 * https://www.elastic.co/guide/en/elasticsearch/reference/current/get-started-roles.html adaptieren Sie den metricbeat user und die Rolle auf unsere umgebung (beats_writer z.b.)
+
+test123
