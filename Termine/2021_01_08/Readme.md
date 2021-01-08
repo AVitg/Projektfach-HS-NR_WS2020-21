@@ -59,6 +59,6 @@ pm_system, beats_system, elastic, kibana_system, logstash_system, remote_monitor
 
 #### und so gehts dann bitte richtig ;)
 *https://www.elastic.co/guide/en/beats/filebeat/current/privileges-to-publish-events.html
-
+** https://github.com/elastic/beats/issues/10241
 
 
