@@ -35,7 +35,7 @@
 	 /etc/init.d/packetbeat stop
      /etc/init.d/packetbeat start
 
-#1 Enable "security" in ES
+# 1 Enable "security" in ES
 * https://www.elastic.co/guide/en/elasticsearch/reference/current/security-getting-started.html folgen bi create user, keine weiteren User anlegen.
 * https://www.elastic.co/guide/en/elasticsearch/reference/current/configuring-security.html
 
