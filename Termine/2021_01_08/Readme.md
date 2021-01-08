@@ -26,7 +26,7 @@
          *  sudo systemctl enable kibana
 
 ## 0.2 Metasploitable: läuft noch?
-  *
+  *ssh root@ms(nummer)
   * filebeat
     *  filebeat -c /etc/filebeat/filebeat.yml -e
   * Packetbeat
