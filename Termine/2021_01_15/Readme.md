@@ -7,5 +7,9 @@
 
 
 
-# 1 "security" 
-# 2 "the hive"  (evtl.)
+# Sans
+* https://www.sans.org/reading-room/whitepapers/incident/incident-handlers-handbook-33901
+* https://isc.sans.edu/podcast.html
+
+# incident management mit "The Hive Project"
+* https://thehive-project.org/
