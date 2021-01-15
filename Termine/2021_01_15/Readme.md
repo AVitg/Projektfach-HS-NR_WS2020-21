@@ -17,3 +17,7 @@
   * https://github.com/TheHive-Project/TheHiveDocs/blob/master/TheHive4/Installation/README.md
   * https://github.com/TheHive-Project/TheHiveDocs/blob/master/TheHive4/Installation/Install_rpm.md
   * https://github.com/TheHive-Project/TheHiveDocs/blob/master/TheHive4/User/Quick-start.md
+  * bin/thehive -Dconfig.file=/etc/thehive/application.conf
+  
+# Elastic Search License change  
+  * https://anonymoushash.vmbrasseur.com/2021/01/14/elasticsearch-and-kibana-are-now-business-risks
